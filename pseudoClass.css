@@ -1,0 +1,52 @@
+table,
+td {
+  border: 1px solid #333;
+}
+
+tr:first-child td:nth-of-type(-n + 4) {
+  background-color: greenyellow;
+}
+
+td:last-of-type {
+  background-color: aqua;
+}
+
+tr:nth-of-type(2n) td:nth-of-type(-n + 4) {
+  background-color: yellow;
+}
+
+tr td:last-of-type:hover {
+  background-color: orange;
+}
+
+ul:first-of-type li:nth-of-type(even) {
+  color: red;
+}
+
+ul:nth-of-type(2) li:nth-of-type(-n + 5) {
+  color: red;
+}
+
+ul:last-of-type li:nth-of-type(n + 5) {
+  color: red;
+}
+
+form input:focus {
+  background: yellow;
+}
+form input:last-of-type {
+  font-size: 20px;
+}
+
+form input:last-of-type:hover {
+  background: blue;
+}
+form button[type="submit"] {
+  margin-top: 10px;
+  border-radius: 10px;
+  background: blue;
+  color: white;
+}
+form button[type="submit"]:hover {
+  background: red;
+}

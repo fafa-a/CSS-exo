@@ -1,0 +1,29 @@
+#menu {
+  margin: 0;
+  padding: 0;
+  font: bold 1em "georgia", verdana;
+  list-style-type: none;
+  width: 15%;
+}
+#menu a {
+  display: block;
+  margin: 5%;
+  color: #508768;
+  text-decoration: none
+  line-height: 2em;
+  width: 80%;
+  border: 1px solid blue;
+  background-color: #bdd7b5;
+  text-align: center;
+}
+#menu a {
+  color: #508768;
+  background-color: #bdd7b5;
+  border-radius: 12px;
+  box-shadow: 8px 8px 12px #62756a;
+}
+#menu a:hover,
+#menu a:focus {
+  color: #bdd7b5;
+  background-color: #508768;
+}
