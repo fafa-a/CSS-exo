@@ -1,0 +1,41 @@
+@import "./../_colors";
+body {
+  margin: 0;
+  padding: 0;
+  nav {
+    width: 300px;
+    ul {
+      display: flex;
+      background-color: $menu-bg-color;
+      height: 20px;
+      list-style-type: none;
+      li {
+        cursor: pointer;
+        &:not(:nth-child(1)):nth-child(-n + 3) {
+          margin-left: 5px;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          visibility: hidden;
+          padding: 0;
+          li {
+            margin: 0;
+            background-color: $hidden-menu-bg-color;
+            &:nth-child(-n + 3) {
+              margin-left: 0 !important;
+            }
+            a {
+              color: $link-color;
+            }
+          }
+        }
+        &:hover {
+          ul {
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+}
