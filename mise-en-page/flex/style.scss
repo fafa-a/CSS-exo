@@ -1,0 +1,32 @@
+@import "./../_colors";
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div#container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  header {
+    background-color: $header-bg-color;
+    height: 10vh;
+  }
+  main {
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    section {
+      background-color: $section-bg-color;
+      width: 70%;
+    }
+    aside {
+      background-color: $aside-bg-color;
+      width: 30%;
+    }
+  }
+  footer {
+    background-color: $footer-bg-color;
+    height: 15vh;
+  }
+}

@@ -1,0 +1,33 @@
+@import "./../_colors";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div#container {
+  header {
+    background-color: $header-bg-color;
+    height: 10vh;
+  }
+  main {
+    height: 75vh;
+    width: 100vw;
+    section {
+      background-color: $section-bg-color;
+      float: left;
+      height: 100%;
+      width: 70vw;
+    }
+    aside {
+      background-color: $aside-bg-color;
+      float: right;
+      height: 100%;
+      width: 30vw;
+    }
+  }
+  footer {
+    background-color: $footer-bg-color;
+    height: 15vh;
+  }
+}

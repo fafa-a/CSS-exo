@@ -1,0 +1,41 @@
+@import "./../_colors";
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div#container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 75vh 15vh;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+
+  header {
+    grid-area: header;
+    background-color: $header-bg-color;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "section aside";
+    section {
+      grid-area: section;
+      background-color: $section-bg-color;
+    }
+
+    aside {
+      grid-area: aside;
+      background-color: $aside-bg-color;
+    }
+  }
+
+  footer {
+    grid-area: footer;
+    background-color: $footer-bg-color;
+  }
+}
