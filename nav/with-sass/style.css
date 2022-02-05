@@ -11,16 +11,12 @@ body nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 18px;
   background-color: #cccccc;
-  height: 20px;
   list-style-type: none;
 }
 
 body nav ul li {
-  cursor: pointer;
-}
-
-body nav ul li:not(:nth-child(1)):nth-child(-n + 3) {
   margin-left: 5px;
 }
 
@@ -30,23 +26,22 @@ body nav ul li ul {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   visibility: hidden;
   padding: 0;
+  background: none;
 }
 
-body nav ul li ul li {
-  margin: 0;
+body nav ul li ul > li {
   background-color: #73dcff;
+  margin: 0;
+  padding-top: 2px;
 }
 
-body nav ul li ul li:nth-child(-n + 3) {
-  margin-left: 0 !important;
-}
-
-body nav ul li ul li a {
+body nav ul li ul > li a {
   color: #faa581;
+  text-decoration: none;
 }
 
 body nav ul li:hover ul {
