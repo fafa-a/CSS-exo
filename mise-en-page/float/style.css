@@ -17,14 +17,14 @@ div#container main section {
   background-color: #fccd99;
   float: left;
   height: 100%;
-  width: 70vw;
+  width: 70%;
 }
 
 div#container main aside {
   background-color: #fde599;
   float: right;
   height: 100%;
-  width: 30vw;
+  width: 30%;
 }
 
 div#container footer {
